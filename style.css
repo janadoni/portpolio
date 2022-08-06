@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+    font-family: 'Poppins', sans-serif;
+    transition: 1s ease all;
+}
+body{
+    /* background-color: black; */
+    opacity: 1;
+    transition: opacity .5s;
+}
+/* header section */
+
+.menubar{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+.menubar .header{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    gap: 10rem;
+}
+.menubar .header .name{
+    font-size: 25px;
+    padding-top:25px;
+}
+.menubar .navbar ul{
+    display: flex;
+    gap: 2rem;
+    padding-top: 25px;
+    
+}
+.menubar .name .spe .div{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.menubar .name i{
+    padding-right: 20px;
+    color: tomato;
+}
+.menubar .navbar ul li{
+    list-style-type: none;
+}
+.menubar .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+} 
+.menubar .navbar ul li a:hover{
+    color: tomato;
+    transition: 1s ease;
+}
+.menubar .menubaricon{
+    padding-top: 25px;
+    font-size: 30px;
+    padding-left: 0;
+    color: tomato;
+    display: none;
+}
+
+/* header section end */
+
+
+/* homesection start */
+@keyframes slideleft{
+    0%{
+       transform: translateX(-100%);
+   }
+   100%{
+       transform: translateX(0);
+   }
+}
+@keyframes slideright{
+   0%{
+      transform: translateX(100%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+.homesection{
+    display: flex;
+    width: 100%;
+    height: 150vh;
+    z-index: 0;
+}
+.homesection .first{
+    flex:1 1 50rem ;
+
+    background: rgba(230,218,206);
+}
+.homesection .second{
+    flex:1 1 50rem;
+    background: white;
+    
+}
+.first .card{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(244,236,230);
+    position: relative;
+    left: 450px;
+    top: 180px;
+    animation: 1s ease-out 0s 1 slideleft;
+
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.366);
+}
+.first .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.first .card .image img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    object-position: 0 5%;
+    overflow: hidden;
+    border-radius:50% ;
+ 
+}
+.first .card .na{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    text-transform:capitalize ;
+    cursor: pointer;
+    
+}
+.na::after{
+    content: "";
+    height: 3px;
+    background-color: tomato;
+    inset: 0;
+    position: absolute;
+    width: 0px;
+    top: 320px;
+    left: 145px;
+   
+}
+.na:hover::after{
+    width: 100px;
+    transition: 1s ease;
+}
+.first .card .progress{
+    text-align: center;
+    padding-top: 50px;
+    font-size:30px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.first .card .social
+{
+    width: 280px;
+    height: 50px;
+    background: white;
+    position: relative;
+    top: 59.6px;
+}
+.first .card .social {
+    padding-left: 120px;
+    padding-top: 20px;
+}
+.first .card .social a{
+padding-left: 30px;
+
+}
+.first .card .social a i{
+    font-size: 25px;
+    color: tomato;
+}
+.first .card .social a i:hover{
+    font-size:30px ;
+    transition: 1s ease all;
+}
+/* homesection first end */
+
+
+/* homesection second start */
+.homesection .second{
+    padding-left: 220px;
+    padding-top: 150px;
+}
+.homesection .second .about h4{
+    text-transform: capitalize;
+    font-size: 100px;
+    font-weight:900;
+    padding-left: 20px;
+    animation: 1s ease-out 0s 1 slideright;
+
+}
+.homesection .second .about h5{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding-left: 25px;
+    animation: 1s ease-out 0s 1 slideright;
+
+}
+.homesection .second .button{
+    padding-left: 25px;
+    padding-top: 50px;
+    transition: 1s ease all;
+    animation: 1s ease-out 0s 1 slideright;
+
+}
+.homesection .second .button a{
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 40px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(255, 99, 71, 0.66);
+    color: white;
+}
+.homesection .second .button a:hover{
+    background: tomato;
+    transition: 1s ease all;
+}
+.homesection .second .para{
+    margin-top: 50px;
+    padding-left: 30px;
+    animation: 1s ease-out 0s 1 slideright;
+
+}
+.footer {
+    height: 300px;
+} 
+/* homesection second end */
+
+
+
+/* homesection end */
+
+/* footer section start */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 80px;
+}
+.footer .copyright h5 i{
+    padding-left: 50px;
+    padding-top:40px;
+    color: tomato;
+    font-size: 20px;
+}
+.footer .copyright h5{
+    font-size: 20px;
+    padding-left: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.footer .contactsection{
+    display: flex;
+    gap: 7rem;
+    /* padding-top: 20px; */
+}
+.contactsection .call h4{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    color: tomato;
+}
+.contactsection .call .mobile{
+    color: black;
+}
+.contactsection .write h4{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    color: tomato;
+}
+.contactsection .write .gmail{
+    color: black;
+}
+.contactsection .follow{
+    padding-bottom:20px;
+}
+.contactsection .follow h4{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    color: tomato;
+    padding-right: 60px;
+    text-align: center;
+}
+.contactsection .follow a i{
+    padding-right: 20px;
+    color: black;
+}
+.contactsection .follow a i:hover{
+    color: tomato;
+}
+.footer .contactsection .f{
+    padding-top: 10px;
+}
+/* footer section end */
+
+
+
+
+/* resume page start */
+.resumesection{
+    position: relative;
+    top: 100px;
+   /* background: rgba(230,218,206); */
+   background-color: rgba(246, 222, 203, 0.97);
+   height: 550vh;
+
+}
+.resumesection .name{
+    font-size: 25px;
+    padding-top:25px;
+    text-align: center;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+ .resumesection .name i{
+    padding-right: 20px;
+    color: tomato;
+}
+
+.resumesection .experience{
+    display: flex;
+    width:500px ;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 500px;
+}
+.resumesection .experience h4{
+    font-size: 35px;
+    color: tomato;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+.resumesection .exp{
+    display: flex;
+    background-color: white;
+    padding: 30px;
+    width: 700px;
+    height: 300px;
+   margin-left: 400px;
+   margin-bottom: 100px;
+   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.366);
+
+
+}
+.resumesection .experience a{
+    text-decoration: none;
+    color: white;
+    background: tomato;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid tomato;
+}
+.resumesection .experience a:hover{
+    background: rgba(255, 99, 71, 0.519);
+    transition: 1s ease;
+}
+.resumesection .exp h6{
+    font-size: 15px;
+    padding-top: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.resumesection .exp a{
+    font-size: 10px;
+    text-align: center;
+    color: tomato;
+}
+.resumesection .exp .study{
+    flex:  1 1 20rem;
+}
+.resumesection .exp .study h4 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 80px;
+}
+.resumesection .exp .study h5 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.resumesection .exp .expshare{
+    flex: 1 1 30rem;
+    border-left: 2px solid tomato;
+}
+.resumesection .exp .expshare p{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.education .exp .expshare h4{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 80px;
+}
+.education .exp .expshare h5 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+ .exp .expshare h4{
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.exp .expshare h4 i:nth-child(1){
+    padding-left: 50px;
+    color: tomato;
+}
+.exp .expshare h4 i{
+    padding-left: 5px;
+    color: tomato;
+}
+.resumefooter{
+    position: relative;
+    top: 100px;
+}
+
+/* resume page end */
+
+/* project section start */
+.projectsection{
+    position: relative;
+    top: 100px;
+    background-color: rgba(246, 222, 203, 0.97);
+    width: 100%;
+    height: 200vh;
+}
+.projectsection .pro{
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+.pro i{
+    font-size: 30px;
+    color: tomato;
+    padding-right: 20px;
+}
+.projectsection .para p {
+    text-align: center;
+    width: 500px;
+    padding-left: 500px;
+    padding-bottom: 100px;
+}
+.projectsection .project{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: white;
+  margin-left: 400px;
+  padding: 20px;
+  gap: 2rem;
+  padding-right:0 ;
+}
+.projectsection .project .proname{
+    flex: 1 1 30rem;
+}
+.projectsection .project .proimage{
+    flex: 1 1 20rem;
+}
+.projectsection .project .proimage img{
+    width: 300px;
+    height:500px ;
+    object-fit: cover;
+    border-radius: 5px;
+}
+ .proname .protitle{
+    color: white;
+    background: rgba(255, 99, 71, 0.326);
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid tomato;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+ }
+ .protitle h4{
+    font-size: 30px;
+    text-transform: capitalize;
+ }
+ .protitle h5{
+    font-size: 20px;
+    padding-top: 10px;
+ }
+ .proname p{
+    padding-top: 50px;
+    text-align: center;
+    color: #666;
+ }
+.projectfooter{
+    position: relative;
+    bottom: -20px;
+}
+
+/* project section end */
+
+
+
+
+
+
+
+/* media query section start */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)  {
+    .menubar{
+        display:block;
+        background: white;
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+    }
+    .menubar .header{
+        display:flex;
+        gap: 1rem;
+    }
+    .menubar .menubaricon{
+        padding-top: 53px;
+        font-size: 20px;
+        padding-left:0px;
+        color: tomato;
+        display: block;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .menubar .menubaricon i{
+        padding-left: 10px;
+        margin: 0;
+        
+    }
+    .menubar .header .name{
+        font-size: 25px;
+        padding-top:50px;
+        text-align: left;
+        
+        
+    }
+    .menubar .navbar{
+        display: none;
+        padding-top: 35px;
+        /* margin-bottom: 100px; */
+        position: relative;
+        top: -30px;
+    }
+    .menubar .navbar ul{
+        padding-top: 0px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: rgba(255, 99, 71, 0.615); */
+     
+    }
+    .menubar .name .spe .div{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .menubar .name i{
+        padding-right: 0px;
+        color: tomato;
+    }
+    .menubar .navbar ul li{
+        list-style-type: none;
+        padding-top: 30px;
+    }
+    .menubar .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        margin-top: 20px;
+        font-size: 20px;
+        /* color: white; */
+        
+} 
+    .menubar .navbar ul li a:hover{
+        color: tomato;
+        transition: 1s ease;
+    }
+/* menubar section end */
+
+
+
+
+/* homesection start */
+
+.homesection{
+    display: inline-block;
+    height: auto;
+    z-index: 0;
+    
+}
+.first .card .social
+{
+    width: 230px;
+    height: 50px;
+    background: white;
+    position: relative;
+    top: 59.6px;
+}
+.homesection .first{
+   width: 100%;
+   background: rgba(230,218,206);
+   /* background-color: black; */
+   position: relative;
+  
+}
+.homesection .second{
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+.first .card{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(244,236,230);
+    position: relative;
+     left: 20px;
+    top: 250px; 
+    /* animation: 1s ease-out 0s 1 slideleft; */
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.366);
+}
+
+
+.first .card .na{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    text-transform:capitalize ;
+    cursor: pointer;
+    
+}
+/* homesectio first end */
+/* @keyframes slideleft{
+     0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideright{
+    0%{
+       transform: translateX(100%);
+   }
+   100%{
+       transform: translateX(0);
+   }
+} */
+/* footer section start */
+
+
+.footer{
+    display:block;
+    width: 100%;
+}
+.footer .copyright h5 {
+    font-size: 30px;
+    width: 100%;
+    padding-left: 10px;
+}
+.footer .contactsection{
+    padding-left: 20px;
+    padding-top: 30px;
+    display: block;
+}
+.contactsection .follow a i{
+    padding-right: 10px;
+    color: black;
+    font-size: 20px;
+}
+.contactsection .follow a{
+    padding-left: 60px;
+}
+/* footer section end */
+
+
+
+
+
+/* resume section start */
+.resumesection{
+    position: relative;
+    top: 100px;
+   /* background: rgba(230,218,206); */
+   background-color: rgba(246, 222, 203, 0.97);
+   height: auto;
+   padding-bottom: 20px;
+
+}
+.resumesection .experience{
+    display: flex;
+    width:100% ;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+}
+.resumesection .exp{
+    display: block;
+    background-color: white;
+    width: 300px;
+    height: 600px;
+   margin-left: 20px;
+   margin-bottom: 100px;
+   /* padding-right: 20px; */
+   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.366);
+
+
+}
+.resumesection .exp .study{
+    padding-bottom: 20px;
+    text-align:center;
+    
+}
+.resumesection .exp .expshare{
+    flex: 1 1 30rem;
+    border-top: 2px solid tomato;
+    border-left: 0;
+}
+/* resume section end */
+
+
+/* project section start */
+
+.projectsection .project{
+    display: block;
+    width: 300px;
+    height:auto;
+    background: white;
+  margin-left: 25px;
+  padding: 20px;
+  gap: 2rem;
+  padding: right 30px; 
+}
+
+.projectsection .para p {
+    text-align: center;
+    width: 350px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+
+.projectsection .pro{
+    padding-top: 150px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+/* project section end */
+}
+
+
+
+/* media query 768px */
+
+@media screen and (min-device-width: 700px) and (max-device-width: 900px)  {
+
+    .first .card{
+        width: 350px;
+        height: 500px;
+        background-color: rgb(244,236,230);
+        position: relative;
+         left: 70px;
+        top: 250px; 
+        /* animation: 1s ease-out 0s 1 slideleft; */
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.366);
+    }
+    .first .card .social
+{
+    width: 230px;
+    height: 50px;
+    background: white;
+    position: relative;
+    top: 59.6px;
+}
+.homesection .second{
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 240px;
+    padding-bottom: 100px;
+    text-align: left;
+
+}
+.footer{
+    display:block;
+    width: 100%;
+}
+.footer .copyright h5 {
+    font-size: 30px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.footer .contactsection{
+    padding-left: 20px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.contactsection .follow a i{
+    padding-right: 0px;
+    color: black;
+    font-size: 20px;
+}
+.contactsection .follow a{
+    padding-left: 20px;
+    
+}
+
+
+/* resume section start */
+
+.resumesection{
+    position: relative;
+    top: 100px;
+   /* background: rgba(230,218,206); */
+   background-color: rgba(246, 222, 203, 0.97);
+   height: auto;
+   padding-bottom: 20px;
+
+}
+.resumesection .experience{
+    display: flex;
+    width:350px ;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left:40px;
+}
+.resumesection .exp{
+    display: flex;
+    background-color: white;
+    padding: 30px;
+    width: 85%;
+    height: 600px;
+   margin-left: 30px;
+   margin-bottom: 100px;
+   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.366);
+
+
+}
+
+/* reume section end */
+
+/* project section */
+
+.projectsection .project{
+    display: flex;
+    width: 85%;
+    height:auto;
+    background: white;
+  margin-left: 25px;
+  padding: 20px;
+  gap: 2rem;
+  padding: right 30px; 
+}
+
+.projectsection .para p {
+    text-align: center;
+    width: 450px;
+    padding-left: 180px;
+    padding-bottom: 100px;
+}
+
+
+.projectsection .pro{
+    padding-top: 150px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+
+/* project scetion end */
+
+}
